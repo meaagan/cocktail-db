@@ -1,5 +1,21 @@
+<div class="head">
+  <h1>Cocktails</h1>
+  <div>
+    <ul>
+      <% ('a'..'z').to_a.each do |letter| %>
+        <li class="letter"><%= link_to letter, cocktail_index_path({letter: letter}) %></li>
+      <% end %>
+    </ul>
+    <ul>
+      <% @categories.each do |category| %>
+        <%= category %>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
 <div class="cards">
-  <% @cocktails.each do |cocktail| %>
+  <% @letter_cocktails.each do |cocktail| %>
     <div class="card-product">
       <img src= <%= cocktail["strDrinkThumb"] %> />
       <div class="card-product-infos">
