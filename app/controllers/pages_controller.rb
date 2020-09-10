@@ -23,12 +23,6 @@ class PagesController < ApplicationController
     letter_serialized = open(@url).read
     letter_parsed = JSON.parse(letter_serialized)
     @letter_cocktails = letter_parsed["drinks"]
-
-    @categories = ["Ordinary Drink","Cocktail","Milk / Float / Shake","Other/Unknown","Cocoa","Shot","Coffee / Tea","Homemade Liqueur","Punch / Party Drink","Beer","Soft Drink / Soda"]
-    # @category_url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=#{params[:category]}"
-    # category_serialized = open(@category_url).read
-    # category_parsed = JSON.parse(category_serialized)
-    # @category_cocktails = category_parsed["drinks"]
   end
 
   def show
