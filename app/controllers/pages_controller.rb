@@ -1,11 +1,11 @@
+require 'json'
+require 'open-uri'
+
 class PagesController < ApplicationController
   def home
   end
 
-  def index 
-    require 'json'
-    require 'open-uri'
-    
+  def index    
     @url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=#{params[:letter]}"
     letter_serialized = open(@url).read
     letter_parsed = JSON.parse(letter_serialized)
