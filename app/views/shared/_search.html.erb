@@ -1,8 +1,8 @@
-# <%= form_tag cocktail_index_path, method: :get do %>
-#     <%= text_field_tag :query,
-#         params[:query],
-#         class: "form-control",
-#         placeholder: "Find a drink"
-#     %>
-#     <%= submit_tag "Search", class: "btn btn-primary" %>
-# <% end %>
+<%= form_tag cocktail_index_path, method: :get do %>
+    <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a drink"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
