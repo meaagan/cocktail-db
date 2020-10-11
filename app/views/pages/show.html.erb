@@ -1,0 +1,23 @@
+<div class="show">
+    <img src=<%= @cocktail["strDrinkThumb"] %>>
+    <div class="cocktail-info">
+        <h1> <%= @cocktail["strDrink"] %> </h1>
+        <h2><%= @cocktail["strCategory"] %></h2>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Alcoholic</th>
+                <td><%= @cocktail["strAlcoholic"] %></td>
+            </tr>
+            <tr>
+                <th scope="row">Glass</th>
+                <td><%= @cocktail["strGlass"] %></td>
+            </tr>
+            <tr>
+                <th scope="row">Instructions</th>
+                <td><%= @cocktail["strInstructions"] %></td>
+            </tr>
+        <tbody>
+    </table>
+    </div>
+</div>

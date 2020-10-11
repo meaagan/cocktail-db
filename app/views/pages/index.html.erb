@@ -1,11 +1,14 @@
-<div class="cards">
-  <% @letter_cocktails.each do |cocktail| %>
-    <div class="card-product">
-      <img src= <%= cocktail["strDrinkThumb"] %> />
-      <div class="card-product-infos">
-        <h2><%= cocktail["strDrink"] %></h2>
-        <p><%= cocktail["strCategory"] %></p>
+<div class="container">
+  <div class="card-container">
+    <% @letter_cocktails.each do |cocktail| %>
+      <div class="card">
+      <img class="card-img-top" src=<%= cocktail["strDrinkThumb"] %> alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title"><%= cocktail["strDrink"] %></h2>
+          <p class="card-text"><%= cocktail["strCategory"] %></p>
+          <p class="card-text"><%= link_to "More Info", cocktail_path({id: cocktail["idDrink"]}) %></p>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
