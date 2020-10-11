@@ -1,54 +1,125 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .cocktail-info {
-    padding-left:0;
-    margin-top: 2%;
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
   }
-  .content {
-    .show {
-      padding: 25px;
-      margin: 25px;
-      display: block;
-      img {
-        width:100%;
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  .head {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+  
+    .random {
+
+    }
+  
+    #title {
+      a {
+        padding:5px;
+        color: black;
       }
     }
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3px;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .cocktail-info {
-    padding-left:0;
-    margin-top: 2%;
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
   }
-  .content {
-    .show {
-      padding: 25px;
-      margin: 25px;
-      display: block;
-      img {
-        width:100%;
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  .head {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+  
+    .random {
+    }
+  
+    #title {
+      a {
+        padding:5px;
+        color: black;
       }
     }
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3px;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .cocktail-info {
-    padding-left:0;
-    margin-top: 2%;
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
   }
-  .content {
-    .show {
-      padding: 25px;
-      margin: 25px;
-      display: block;
-      img {
-        width:100%;
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  .head {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+  
+    .random {
+
+    }
+  
+    #title {
+      a {
+        padding:5px;
+        color: black;
       }
     }
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3px;
   }
 }
 
