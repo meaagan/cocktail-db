@@ -1,6 +1,88 @@
-// Specific CSS for your home-page
-
-.home {
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .home {
+    display:inline;
+  
+    svg {
+      width: 100%;
+      padding: 5%;
+    }
+  }
+  
+  .home-info {
   padding: 5%;
-  text-align:center;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .home {
+    display:inline;
+  
+    svg {
+      width: 100%;
+      padding: 5%;
+    }
+  }
+  
+  .home-info {
+  padding: 5%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .home {
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  
+    svg {
+      width: 50%;
+    }
+  }
+  
+  .home-info {
+    width:40%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .home {
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  
+    svg {
+      width: 40%;
+    }
+  }
+  
+  .home-info {
+    width:40%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .home {
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  
+    svg {
+      width: 50%;
+    }
+  }
+  
+  .home-info {
+    width:40%;
+  }
 }

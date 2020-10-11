@@ -10,4 +10,5 @@
       <button class="btn btn-light btn-sm"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
     <% end %>
   </div>
+  <%= button_to "Random Cocktail", cocktail_path({id: @random["idDrink"]}), :method => :get, class: "btn btn-light btn-sm" %>
 </div>

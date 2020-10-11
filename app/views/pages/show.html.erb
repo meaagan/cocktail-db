@@ -13,11 +13,6 @@
                 <th scope="row">Glass</th>
                 <td><%= @cocktail["strGlass"] %></td>
             </tr>
-            <tr>
-                <th scope="row">Instructions</th>
-                <td><%= @cocktail["strInstructions"] %></td>
-            </tr>
-            <tr>
             <th scope="row">Ingredients</th>
             <td>
                 <% @measured_ing.each do |ingredient| %>
@@ -27,6 +22,11 @@
                     <% end %>
                 <% end %>
             </td>
+            <tr>
+                <th scope="row">Instructions</th>
+                <td><%= @cocktail["strInstructions"] %></td>
+            </tr>
+            <tr>
         </tr>
         <tbody>
     </table>

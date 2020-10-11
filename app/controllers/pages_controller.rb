@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def home
+    @random_url = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+    random_serialized = open(@random_url).read
+    random_parsed = JSON.parse(random_serialized)
+    @random = random_parsed["drinks"][0]
   end
 
   def index 
@@ -10,9 +14,19 @@ class PagesController < ApplicationController
     letter_serialized = open(@url).read
     letter_parsed = JSON.parse(letter_serialized)
     @letter_cocktails = letter_parsed["drinks"]
+
+    @random_url = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+    random_serialized = open(@random_url).read
+    random_parsed = JSON.parse(random_serialized)
+    @random = random_parsed["drinks"][0]
   end
 
   def show
+    @random_url = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+    random_serialized = open(@random_url).read
+    random_parsed = JSON.parse(random_serialized)
+    @random = random_parsed["drinks"][0]
+
     @url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=#{params[:id]}"
     cocktail_serialized = open(@url).read
     cocktail_parsed = JSON.parse(cocktail_serialized)
