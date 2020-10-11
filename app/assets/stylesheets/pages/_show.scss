@@ -7,10 +7,106 @@
     
       img {
         width:40%;
+        height: 40%;
       }
     }
   }
 
 .cocktail-info {
   padding-left:10%;
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .content {
+    padding-bottom: 5%;
+      .show {
+        padding: 25px;
+        margin: 25px;
+        display: flex;
+      
+        img {
+          width:40%;
+          height: 40%;
+        }
+      }
+    }
+  .cocktail-info {
+    padding-left:10%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .content {
+    padding-bottom: 5%;
+      .show {
+        padding: 25px;
+        margin: 25px;
+        display: flex;
+      
+        img {
+          width:40%;
+          height: 40%;
+        }
+      }
+    }
+  .cocktail-info {
+    padding-left:10%;
+  }  
 }

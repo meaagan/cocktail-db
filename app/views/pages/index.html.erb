@@ -1,5 +1,7 @@
-<div class="container">
-  <div class="card-container">
+<div class="card-container">
+  <% if @letter_cocktails.nil? %>
+    <h1>No cocktails found</h1>
+  <% else %>
     <% @letter_cocktails.each do |cocktail| %>
       <div class="card">
       <img class="card-img-top" src=<%= cocktail["strDrinkThumb"] %> alt="Card image cap">
@@ -10,5 +12,5 @@
         </div>
       </div>
     <% end %>
-  </div>
+  <% end %>
 </div>

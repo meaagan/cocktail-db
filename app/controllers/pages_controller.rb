@@ -23,8 +23,10 @@ class PagesController < ApplicationController
     @ingredients = ing_rej.values
 
     all_doses = @cocktail.select {|key, value| key.match(/^strMeasure\d+/)} 
-    doses_rej = all_doses.reject {|key, value| value.nil? }
+    doses_rej = all_doses.reject {|key, value| value.nil? || value.empty? }
     @doses = doses_rej.values
+  
+    @measured_ing = @doses.zip(@ingredients)
   end
 
   private 

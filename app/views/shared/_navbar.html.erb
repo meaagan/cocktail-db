@@ -1,9 +1,13 @@
 <div class="head">
-  <h1>Cocktails</h1>
+  <h1 id="title"><%= link_to "Cocktail Helper", root_path %></h1>
   <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
       <% ('a'..'z').to_a.each do |letter| %>
-        <button class="btn btn-light"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
+        <button class="btn btn-light btn-sm"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
       <% end %>
-    </ul>
+  </div>
+  <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <% ('0'..'9').to_a.each do |letter| %>
+      <button class="btn btn-light btn-sm"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
+    <% end %>
   </div>
 </div>

@@ -17,6 +17,17 @@
                 <th scope="row">Instructions</th>
                 <td><%= @cocktail["strInstructions"] %></td>
             </tr>
+            <tr>
+            <th scope="row">Ingredients</th>
+            <td>
+                <% @measured_ing.each do |ingredient| %>
+                    <%= ingredient.join %>
+                    <% if ingredient != @measured_ing.last %>
+                        ,
+                    <% end %>
+                <% end %>
+            </td>
+        </tr>
         <tbody>
     </table>
     </div>
