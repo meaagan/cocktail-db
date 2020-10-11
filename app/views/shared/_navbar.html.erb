@@ -1,14 +1,19 @@
 <div class="head">
-  <h1 id="title"><%= link_to "Cheers!", root_path %></h1>
-  <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <% ('a'..'z').to_a.each do |letter| %>
-        <button class="btn btn-light btn-sm"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
+  <div></div>
+  <div>
+    <h1 id="title"><%= link_to "Cheers!", root_path %> </h1>
+    <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <% ('a'..'z').to_a.each do |letter| %>
+          <%= link_to letter, cocktail_index_path({letter: letter}), class: "btn btn-light btn-sm" %>
+        <% end %>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <% ('0'..'9').to_a.each do |letter| %>
+        <%= link_to letter, cocktail_index_path({letter: letter}), class: "btn btn-light btn-sm" %>
       <% end %>
+    </div>
   </div>
-  <div class="toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <% ('0'..'9').to_a.each do |letter| %>
-      <button class="btn btn-light btn-sm"><%= link_to letter, cocktail_index_path({letter: letter}) %></button>
-    <% end %>
+  <div class="random">
+    <%= link_to "Random Cocktail", cocktail_path({id: @random["idDrink"]}), class: "btn btn-light btn-sm" %>
   </div>
-  <%= button_to "Random Cocktail", cocktail_path({id: @random["idDrink"]}), :method => :get, class: "btn btn-light btn-sm" %>
 </div>

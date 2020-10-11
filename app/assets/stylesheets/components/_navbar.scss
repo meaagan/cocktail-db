@@ -1,32 +1,143 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.head {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
-
-  #title {
-    a {
-      padding:5px;
-      color: black;
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
     }
   }
 }
 
-.toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cocktail-info {
+    padding-left:0;
+    margin-top: 2%;
+  }
+  .content {
+    .show {
+      padding: 25px;
+      margin: 25px;
+      display: block;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
+  }
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  .head {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    .random {
+      align-self: end;
+      justify-self: end;
+    }
+  
+    #title {
+      a {
+        padding:5px;
+        color: black;
+      }
+    }
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
+  }
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  .head {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    .random {
+      align-self: end;
+      justify-self: end;
+    }
+  
+    #title {
+      a {
+        padding:5px;
+        color: black;
+      }
+    }
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3px;
+  }
 }
